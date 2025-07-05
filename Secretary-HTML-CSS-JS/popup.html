@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <form id="submitForm">
+        <div id="titleSection">
+          <div id="line"></div>
+          <input placeholder="Add title" id="summary" class="headline-medium" />
+        </div>
+
+        <div id="item-type">
+          <div class="body" id="event">
+            Event
+            <div class="indicator selected" id="event-indicator"></div>
+          </div>
+          <div class="body" id="task">
+            Task
+            <div class="indicator" id="task-indicator"></div>
+          </div>
+        </div>
+
+        <div>
+
+          <div id="date">
+            
+            <div id="date-display" class="body">Tuesday, June 3 2025</div>
+          </div>
+          <input id="date-picker" type="date" />
+          
+          <div id="time" class="body-small">
+
+            <div class="time-div"> 
+              <div id="start-display" class="body-small">10:00 am</div>
+              <div class="time-border"></div>
+              <input id="start-picker" type="time" />
+            </div>
+
+            <div>-</div>
+
+            <div class="time-div">
+              <div id="end-display" class="body-small">11:00 am</div>
+              <div class="time-border"></div>
+              <input id="end-picker" type="time" />
+            </div>
+
+          </div>
+
+        <input placeholder="Add location" id="location" class="body">
+          
+        <input placeholder="Add description" id="description" class="body" />
+
+        </div>
+
+        <input id="submit" type="submit" value="Save to Calendar"/>
+      </form>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
